@@ -7,7 +7,7 @@ from sklearn.metrics import adjusted_rand_score
 from model import *
 from utils import unpack_acc
 ## import human data for fitting
-hdf = pd.read_csv('../../data/human_data/human_data.csv')
+hdf = pd.read_csv('data/human/human_data.csv')
 humanB_acc,humanI_acc = hdf.loc[:,('blocked mean','interleaved mean')].values.T
 
 
